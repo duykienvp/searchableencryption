@@ -1,0 +1,14 @@
+git clone https://github.com/USC-InfoLab/fhipe.git
+
+brew install gmp
+
+brew install libomp
+
+brew install openssl
+cd /usr/local/include 
+ln -s ../opt/openssl/include/openssl .
+
+
+sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+
+- install charm and flint instead of using old dependency
